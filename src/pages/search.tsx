@@ -3,7 +3,7 @@ import { useInfiniteQuery } from "@tanstack/react-query"
 import { useRouter } from "next/router"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { Photos } from "unsplash-js/dist/methods/search/types/response"
-import { Loading } from "./Loading";
+import { Loading } from "../components/Loading";
 
 type SearchResponse = {
   total: number
@@ -38,7 +38,7 @@ export default function Search() {
 
 
   return (
-    <main className="flex flex-col items-center w-screen h-screen" >
+    <main className="flex flex-col items-center w-full h-screen" >
       <h1 className="font-bold text-xl">{router.query.q}</h1>
       {(!data) ? <div className='h-full w-full'>
         <Loading />

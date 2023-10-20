@@ -3,7 +3,7 @@ import { useInfiniteQuery } from '@tanstack/react-query'
 import type { Basic } from 'unsplash-js/dist/methods/photos/types'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import SearchBox from '@/components/searchbox'
-import { Loading } from './Loading'
+import { Loading } from '../components/Loading'
 
 type UnsplashResponse = {
   data: Basic[],

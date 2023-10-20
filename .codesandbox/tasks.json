@@ -23,7 +23,7 @@
     },
     "start": {
       "name": "start",
-      "command": "yarn start"
+      "command": "git pull && yarn start"
     },
     "lint": {
       "name": "lint",
